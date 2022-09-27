@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+	"cartesian-tree",
+	"bit-parallelism",
+]
