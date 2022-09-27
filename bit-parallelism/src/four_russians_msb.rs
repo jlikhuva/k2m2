@@ -8,6 +8,8 @@
 //! /// A procedure for finding the index of the most significant
 //! /// bit in time linear to the number of bits used
 //! /// to represent the value.
+//! 
+//! 
 //! fn get_msb_idx_of(query: u64) -> u8 {
 //!     for i in (0..64).rev() {
 //!         if query & (1 << i) != 0 {
@@ -136,6 +138,9 @@ impl FourRussiansMSB {
 /// Returns the 0-based index of the query's most significant bit.
 /// 
 /// ```rust
+/// 
+/// use bit_parallelism::four_russians_msb::get_msb_idx_of;
+/// 
 /// let msb = get_msb_idx_of(873);
 /// assert_eq!(9, msb);
 /// let base: usize = 2;
