@@ -4,6 +4,12 @@ version = "0.1.0"
 edition = "2021"
 license = "GPL-2.0-or-later"
 description = "Small integer specialized word level parallel algoriths and data structures"
+rust-version = "1.64"
+authors = ["jlikhuva <jlikhuva@alumni.stanford.edu>"]
+readme = "README.md"
+repository = "https://github.com/jlikhuva/k2m2/tree/main/bit-parallelism"
+homepage = "https://github.com/jlikhuva/k2m2/tree/main/bit-parallelism"
+keywords = ["bit-level-algorithms", "four-russians", "x-fast-trie", "y-fast-trie"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
