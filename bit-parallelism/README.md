@@ -1,4 +1,4 @@
-# Word Level Parallelism
+# Word Level Parallelism [![Crates.io][crates-badge]][crates-url]
 
 Bit level algorithms for developing useful when developing specialized integer data structures such as the [x-fast trie](http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/15/Small15.pdf)
 
@@ -62,3 +62,6 @@ We can, using bit level parallelism, locate the index of the most significant bi
 4. [6.851](http://courses.csail.mit.edu/6.851/fall17/scribe/lec12.pdf)
 5. [The Original Fusion Tree Paper](https://reader.elsevier.com/reader/sd/pii/0022000093900404?token=1610EF62181DAC974715067B85459A4709A9BC64E39827CE0369C6C8E18540DFD1DBAD38BEE35BFF95C4C05E45A1D1D5)
 6. [This StackOverflow Question. Scroll down until you find the answer by user `templatetypedef`](https://stackoverflow.com/questions/3878320/understanding-fusion-trees)
+
+[crates-badge]: https://img.shields.io/crates/v/bit-parallelism.svg
+[crates-url]: https://crates.io/crates/bit-parallelism
