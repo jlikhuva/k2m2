@@ -10,7 +10,7 @@ The central idea behind the algorithms in this library  is this:
 
 * If you have a bunch of small integers — each smaller that sixty four bits, e.g. a bunch of bytes, we can pack many of them into a single sixty four bit integer.
 * We can then operate on that packed integer as if it were a single number. For example, we can fit 8 byte sized numbers in a single word.
-* By operating on the packed integer, we are in effect operating on 8 different integers in parallel. 
+* By operating on the packed integer, we are in effect operating on 8 different integers in parallel.
 
 This is what is called `world level parallelism`.
 
