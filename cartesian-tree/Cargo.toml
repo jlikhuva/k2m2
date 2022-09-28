@@ -2,7 +2,18 @@
 name = "cartesian-tree"
 version = "0.1.0"
 edition = "2021"
+license = "GPL-2.0-or-later"
+description = "Construct a Cartesian Tree from a Slice in Linear Time"
+rust-version = "1.64"
+authors = ["jlikhuva <jlikhuva@alumni.stanford.edu>"]
+readme = "README.md"
+repository = "https://github.com/jlikhuva/k2m2/tree/main/cartesian-tree"
+homepage = "https://github.com/jlikhuva/blog/blob/main/posts/mathematical-sciences/rmq.md#cartesian-trees--the-lca-rmq-equivalence"
+keywords = ["RMQ", "Tree", "Heap", "Cartesian", "Data Structure", "LCA"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[dev-dependencies]
+pretty_assertions = "1"

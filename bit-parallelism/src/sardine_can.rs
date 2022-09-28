@@ -1,9 +1,9 @@
 //! # The `SardineCan` Structure
-//! 
+//!
 //! Suppose we wish to maintain a set of small sized integers in a B-Tree. And suppose too that we wish to take advantage of the fact that we can fit many of these integers in a single, larger integer. How would we go about designing a single node in such a B-Tree?
-//! 
+//!
 //! Recall that a B-Tree of order `b` is a multi-way search tree in which each node is a bucket that must contain between `b - 1` and `2b - 1` keys. Furthermore, each node has one more child than the number of keys it contains. That is, each node must have between `b` and `2b` child nodes. Operations on B-Trees rely on one key operation: `node.rank(x)`. This operation searches through the keys of a single node (which are sorted) and either returns the location of `x` in the node, or the index of the child we need to descend into in order to complete the operation at hand. In run of the mill B-Trees, `node.rank(x)` is implemented using binary search and thus takes `O(lg b)`. However, if our keys are small integers, we can perform `node.rank(x)` in `O(1)`.
-//! 
+//!
 //! The `SardineCan` implements a B-Tree Node specialized for storing small integers.
 
 /// The abstraction for a single node in our b-tree
@@ -57,7 +57,8 @@ impl SardineCan {
         let tiled_x = query as u64 * multiplier;
 
         // The bitmask to turn on  the sentinel bits
-        let sentinel_mask: u64 = 0b10000000_10000000_10000000_10000000_10000000_10000000_1000000010000000;
+        let sentinel_mask: u64 =
+            0b10000000_10000000_10000000_10000000_10000000_10000000_1000000010000000;
 
         // Set the sentinel bits to 1 and return the tiled number
         tiled_x | sentinel_mask
@@ -76,7 +77,8 @@ impl SardineCan {
         // Ultimately, we're only interested in whether the spacer sentinel bits
         // are turned on or off. In particular, we just need to know how many are
         // turned on. Here we use the mask from `parallel_tile` to isolate them
-        let sentinel_mask: u64 = 0b10000000_10000000_10000000_10000000_10000000_10000000_1000000010000000;
+        let sentinel_mask: u64 =
+            0b10000000_10000000_10000000_10000000_10000000_10000000_1000000010000000;
         difference &= sentinel_mask;
 
         // There's an alternative method of counting up how many spacer bits are set to 1.
