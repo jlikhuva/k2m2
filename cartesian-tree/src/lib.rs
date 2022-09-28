@@ -1,6 +1,15 @@
 //! # Cartesian Tree
 //!
 //! Convert any array into a Cartesian Tree in Linear Time.
+//! 
+//! ## Usage
+//! ```rust
+//! let v = [93, 84, 33, 64, 62, 83, 63];
+//! let tree: cartesian_tree::CartesianTree<'_, _> = v.as_ref().into();
+//! for (&l, &r) in tree.in_order_traversal().into_iter().zip(v.iter()) {
+//!   assert_eq!(l, r);
+//! }
+//! ```
 //!
 //! ## Background
 //!
