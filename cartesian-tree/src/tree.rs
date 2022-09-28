@@ -167,7 +167,7 @@ impl<'a, T: Ord> CartesianTree<'a, T> {
 #[test]
 fn test_cartesian_tree() {
     use pretty_assertions::assert_eq;
-    
+
     let v = [93, 84, 33, 64, 62, 83, 63];
     let tree: CartesianTree<'_, _> = v.as_ref().into();
     assert!(tree.root_idx.is_some());

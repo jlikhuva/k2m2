@@ -74,10 +74,10 @@ compile_error! {
 pub mod four_russians_msb;
 pub mod sardine_can;
 
-pub use sardine_can::SardineCan;
-pub use four_russians_msb::FourRussiansMSB;
 pub use four_russians_msb::get_msb_idx_of;
 pub use four_russians_msb::lcp_len_of;
+pub use four_russians_msb::FourRussiansMSB;
+pub use sardine_can::SardineCan;
 
 const USIZE_BITS: usize = 64;
 
