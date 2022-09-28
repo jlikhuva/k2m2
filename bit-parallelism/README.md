@@ -1,6 +1,6 @@
 # Word Level Parallelism [![Crates.io][crates-badge]][crates-url]
 
-Bit level algorithms for developing useful when developing specialized integer data structures such as the [x-fast trie](http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/15/Small15.pdf)
+Bit level algorithms  useful when developing specialized integer data structures such as the [x-fast trie](http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/15/Small15.pdf)
 
 ## Overview
 

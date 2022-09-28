@@ -74,6 +74,11 @@ compile_error! {
 pub mod four_russians_msb;
 pub mod sardine_can;
 
+pub use sardine_can::SardineCan;
+pub use four_russians_msb::FourRussiansMSB;
+pub use four_russians_msb::get_msb_idx_of;
+pub use four_russians_msb::lcp_len_of;
+
 const USIZE_BITS: usize = 64;
 
 ///  Given a number `x` and a length k, extract the first k bits of x in O(1).
