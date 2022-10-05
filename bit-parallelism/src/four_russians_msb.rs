@@ -1,8 +1,12 @@
 //! # `O(1)` Most Significant Bit: FourRussiansMSB
 //!
-//! When we talk of the most significant bit of a number, we're often referring to the 0-indexed location of the highest bit set. Note that this is a more general problem than simply finding the number that would be formed if only the `msb` were set. For instance, `MSB(010010001)` is `7` and not `128`.
+//! When we talk of the most significant bit of a number, we're often referring to the 0-indexed 
+//! location of the highest bit set. Note that this is a more general problem than simply finding the 
+//! number that would be formed if only the `msb` were set. For instance, `MSB(010010001)` is `7` and not `128`.
 //!
-//! The simplest method for finding this index in by doing a linear scan over the bits of the number in question while keeping a count of the number of bits seen thus far. This scheme runs in `O(lg n)` where `n` is the highest number our function may operate on.
+//! The simplest method for finding this index in by doing a linear scan over the bits of 
+//! the number in question while keeping a count of the number of bits seen thus far. 
+//! This scheme runs in `O(lg n)` where `n` is the highest number our function may operate on.
 //!
 //! ```rust
 //! /// A procedure for finding the index of the most significant
@@ -20,9 +24,14 @@
 //! }
 //! ```
 //!
-//! We can improve upon the linear scanning procedure using bit level binary search. This brings down the running time to `O(lg lg n)`. Often, however, when we know that we'll be doing many `msb` queries, we use a lookup table to compute this value. Using that method, we're able to locate the index of the highest bit set in constant  `O(1)` time, albeit with an added preprocessing step to build the lookup table.
+//! We can improve upon the linear scanning procedure using bit level binary search. 
+//! This brings down the running time to `O(lg lg n)`. 
+//! Often, however, when we know that we'll be doing many `msb` queries, we use a lookup table to compute 
+//! this value. Using that method, we're able to locate the index of the highest bit set in constant  `O(1)` time, 
+//! albeit with an added preprocessing step to build the lookup table.
 //!
-//! We can, using bit level parallelism, locate the index of the most significant bit in constant time without using a lookup table.
+//! We can, using bit level parallelism, locate the index of the most significant bit in constant 
+//! time without using a lookup table.
 //!
 
 #[derive(Debug)]
